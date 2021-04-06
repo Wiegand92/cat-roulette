@@ -1,0 +1,48 @@
+@use '../base/settings';
+
+.users{
+  height: 100%;
+  width: 100%;
+  background-color: settings.$background-color;
+  display: flex;
+  flex-direction: column;
+
+  ul{
+    background-color: settings.$secondary-background-color;
+    margin: 0;
+    padding: 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: start;
+    height: 78vh;
+    box-shadow: .2rem 0 settings.$text-color;
+    
+    li{
+      list-style: none;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .offline{
+    height: calc(88vh + .2rem);
+    box-shadow: none;
+    border: .2rem solid settings.$text-color;
+    border-left: none;
+    border-top: none;
+  }
+
+  .top{
+    background-color: settings.$text-color;
+    min-height: 10vh;
+  }
+
+  button{
+    width: 100%;
+    min-width: 10rem;
+    min-height: 10vh;
+    background-color: settings.$text-color;
+    box-shadow: 0 .2rem settings.$text-color;
+    color: settings.$background-color
+  }
+}

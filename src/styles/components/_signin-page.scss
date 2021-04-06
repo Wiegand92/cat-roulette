@@ -1,0 +1,44 @@
+@use '../base/settings';
+
+.signin-page{
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.signin-form{
+  align-items: center;
+  background-color: settings.$border-color;
+  box-shadow: .2rem .2rem .2rem settings.$text-color;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  justify-content: center;
+  width: 25rem;
+
+  input{
+    text-align: center;
+    background-color: settings.$background-color;
+    border: .2rem settings.$text-color inset;
+    border-radius: .5rem;
+    height: 5rem;
+    width: 95%;
+    margin: .2rem 2.5%;
+  }
+
+  .name-taken{
+    border: .2rem red inset;
+  }
+
+  button{
+    background-color: settings.$secondary-background-color;
+    border: .2rem settings.$text-color outset;
+    border-radius: .5rem;
+    height: 5rem;
+    width: 95%;
+    margin: .2rem 2.5%;
+  }
+}

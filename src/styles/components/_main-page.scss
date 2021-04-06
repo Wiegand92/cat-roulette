@@ -1,0 +1,42 @@
+@use '../base/settings';
+
+.main-page{
+  width: 100vw;
+  max-width: 100vw;
+  height: 98vh;
+  max-height: 100vh;
+  background-color: settings.$background-color;
+  color: settings.$text-color;
+  margin: none;
+  display: grid;
+  grid-template: 
+    "users header"
+    "users main"
+  ;
+  grid-template-rows: 10vh 90vh;
+  grid-template-columns: 1fr 9fr;
+}
+
+.title{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  grid-area: header;
+  background-color: settings.$text-color;
+  color: settings.$background-color;
+  margin: 0 0 0 0;
+}
+
+.users{
+  grid-area: users;
+  width: fit-content;
+}
+
+.main{
+  box-sizing: content-box;
+  grid-area: main;
+}
+
+.offline{
+  box-shadow:  0 0.2rem settings.$text-color;
+}
